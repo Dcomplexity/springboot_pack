@@ -1,7 +1,6 @@
 package com.cfk804.springboot_pack.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import generator.domain.Dcf1;
 
 /**
 * @author cfk804

@@ -1,9 +1,7 @@
 package generator.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import generator.domain.Dcf1;
-import generator.service.Dcf1Service;
-import generator.mapper.Dcf1Mapper;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,7 +11,7 @@ import org.springframework.stereotype.Service;
 */
 @Service
 public class Dcf1ServiceImpl extends ServiceImpl<Dcf1Mapper, Dcf1>
-    implements Dcf1Service{
+    implements IService<Dcf1> {
 
 }
 
