@@ -1,0 +1,9 @@
+server:
+  port: 9880
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://1.117.238.131:3306/springboot_vue_test?serverTimezone=GMT%2b8
+    username: dc
+    password: dc199082
