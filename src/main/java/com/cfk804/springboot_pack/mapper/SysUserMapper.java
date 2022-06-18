@@ -5,6 +5,7 @@ import com.cfk804.springboot_pack.entity.SysUser;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -23,6 +24,9 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
     @Insert("insert into sys_user(username, password, nickname, email, phone, address) " +
             "VALUES (#{username}, #{password}, #{nickname}, #{email}, #{phone}, #{address})")
     int insert();
+
+    @Update("update sys_user set username=#{username}, password=#{password}")
+    void update(SysUser user);
 }
 
 
